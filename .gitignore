@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local model checkpoints and generated outputs.
+checkpoints/
+models/
+outputs/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
