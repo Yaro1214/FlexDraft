@@ -54,30 +54,8 @@ pip install -r requirements.txt
 
 ## 📦 Checkpoints
 
-FlexDraft loads the target LLM and draft checkpoint separately.
-
-- **Target model:** `Qwen/Qwen3-8B` or a local Qwen3-8B checkpoint (~16 GB).
-
-The draft checkpoint contains only the **draft model weights** (~3.8 GB) and a `config.json` (~1 KB). The target model is loaded separately.
-
-**Checkpoint size for inference:** ~3.8 GB  
-**Files needed:** `model.safetensors` + `config.json`
-
-#### Download
-
-Download from Google Drive (anonymous link):
-
-**[FlexDraft-Qwen3-8B Checkpoint](https://drive.google.com/drive/folders/1gXbBOgr8SUS9Co7wrA0CnNTg96hVDSB6?usp=sharing)**
-
-Expected draft checkpoint files:
-
-```text
-flexdraft-qwen3-8b/
-├── config.json
-└── model.safetensors
-```
-
-The draft config should include `flexdraft_config`, including `target_layer_ids` and `enable_anchor_bias_logits`.
+Download the draft checkpoint here: **[FlexDraft-Qwen3-8B Checkpoint](https://drive.google.com/drive/folders/1gXbBOgr8SUS9Co7wrA0CnNTg96hVDSB6?usp=sharing)**.
+The target model, such as `Qwen/Qwen3-8B`, is loaded separately with `--model-name-or-path`.
 
 ## ⚡ Quick Start
 
